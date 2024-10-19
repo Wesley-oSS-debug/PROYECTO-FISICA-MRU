@@ -6,9 +6,9 @@ int main() {
 	do {
 		system("cls");
 		cout<<"MENU PRINCIPAL"<<endl;
-		cout<<"1. Calcular Distancia"<<endl
-			<<"2. Calcular Velocidad"<<endl
-			<<"3. Calcular Tiempo"<<endl
+		cout<<"1. Calcular Distancia."<<endl
+			<<"2. Calcular Velocidad."<<endl
+			<<"3. Calcular Tiempo."<<endl
 			<<"0. Salir del programa\n"<<endl;
 		cout<<"Ingrese una opcion: "; cin>>op; 
 		switch (op) {

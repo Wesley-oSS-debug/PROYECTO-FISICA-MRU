@@ -8,6 +8,6 @@ void Distancia() {
     cout<<"Ingrese la velocidad (m/s): "; cin>>velocidad;
     cout<<"Ingrese el tiempo (s): "; cin>>tiempo;
     double distancia=velocidad*tiempo;
-    cout<<"\nLa distancia recorrida es: "<<distancia<<" m/s"<< endl;
+    cout<<"\nLa distancia recorrida es: "<<distancia<<" m"<< endl;
     system("pause");
 }
