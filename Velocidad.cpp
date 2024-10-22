@@ -11,6 +11,7 @@ void Velocidad() {
 	cout<<"Ingrese la distancia (m): "; cin>>Dato[n].distancia;
 	cout<<"Ingrese el tiempo (s): "; cin>>Dato[n].tiempo;
     Dato[n].velocidad=Dato[n].distancia/Dato[n].tiempo;
+    cout<<"\nLa velocidad es: "<<Dato[n].velocidad<<" m/s"<< endl;
     n++;
 	cout<<endl;	
     system("pause");
