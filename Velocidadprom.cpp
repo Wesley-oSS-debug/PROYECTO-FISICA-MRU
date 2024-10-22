@@ -9,7 +9,8 @@ void Velocidadprom() {
     cout<<"Ingrese la posicion final(m): "; cin>>xf;
     cout<<"Ingrese el tiempo inicial (s): "; cin>>t1;
     cout<<"Ingrese el tiempo final (s): "; cin>>t2;
-    cout<<"Velocidad promedio = ("<<xf<<"-"<<x0<<")/"<<"("<<t2<<"-"<<t1<<")";
+    cout<<endl;
+    cout<<"Velocidad promedio = (Xf-x0)/"<<"(tf-t0)"<<endl;
     double velocidadprom=(xf-x0)/(t2-t1);
     cout<<"\nLa velocidad instantanea es: "<<velocidadprom<<" m/s"<< endl;
     system("pause");
