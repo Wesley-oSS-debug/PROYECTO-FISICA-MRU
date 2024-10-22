@@ -12,7 +12,8 @@ int main() {
 			<<"2. Calcular Velocidad."<<endl
 			<<"3. Calcular Tiempo."<<endl
 			<<"4. Calcular la velocidad promedio"<<endl
-			<<"5. Mostrar datos"<<endl
+			<<"5. Calcular la repidez promedio "<<endl
+			<<"6. Mostrar datos"<<endl
 			<<"0. Salir del programa\n"<<endl;
 		cout<<"Ingrese una opcion: "; cin>>op;
 		switch (op) {
@@ -29,8 +30,11 @@ int main() {
 				Velocidadprom();
 				break;
 			case 5:
-				MostrarDatos();
+				Rapidezprom();
 				break;
+      case 6:
+        MostrarDatos();
+				break;	
 		}
 	} while (op!=0);
 	return 0;
