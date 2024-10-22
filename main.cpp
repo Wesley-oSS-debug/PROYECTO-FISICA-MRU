@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 	int op;
-		cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
+	cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
 	do {
 		system("cls");
 		cout<<"MENU PRINCIPAL"<<endl;
