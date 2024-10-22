@@ -9,6 +9,7 @@ int main() {
 		cout<<"1. Calcular Distancia."<<endl
 			<<"2. Calcular Velocidad."<<endl
 			<<"3. Calcular Tiempo."<<endl
+			<<"4. Calcular la velocidad promedio"<<endl
 			<<"0. Salir del programa\n"<<endl;
 		cout<<"Ingrese una opcion: "; cin>>op; 
 		switch (op) {
@@ -20,6 +21,9 @@ int main() {
 				break;
 			case 3:
 				Tiempo();
+				break;
+			case 4:
+				Velocidadprom();
 				break;
 		}
 	} while (op!=0);
