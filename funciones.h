@@ -5,5 +5,6 @@ void Distancia();
 void Velocidad();
 void Tiempo();
 void Velocidadprom();
+void Rapidezprom();
 #endif
 
