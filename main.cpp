@@ -1,10 +1,12 @@
 #include <iostream>
 #include "funciones.h"
 #include <windows.h>
+#include "estructuras.h"
 using namespace std;
 int main() {
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
+	cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
 	do {
 		system("cls");
 		cout<<"MENU PRINCIPAL"<<endl;
@@ -12,9 +14,10 @@ int main() {
 			<<"2. Calcular Velocidad."<<endl
 			<<"3. Calcular Tiempo."<<endl
 			<<"4. Calcular la velocidad promedio"<<endl
-			<<"5. Calcular la repidez promedio"<<endl
+			<<"5. Calcular la repidez promedio "<<endl
+			<<"6. Mostrar datos"<<endl
 			<<"0. Salir del programa\n"<<endl;
-		cout<<"Ingrese una opcion: "; cin>>op; 
+		cout<<"Ingrese una opcion: "; cin>>op;
 		switch (op) {
 			case 1:
 				Distancia();
@@ -30,6 +33,9 @@ int main() {
 				break;
 			case 5:
 				Rapidezprom();
+				break;
+      case 6:
+        MostrarDatos();
 				break;	
 		}
 	} while (op!=0);
