@@ -1,8 +1,10 @@
 #include <iostream>
 #include "funciones.h"
+#include <windows.h>
 #include "estructuras.h"
 using namespace std;
 int main() {
+	SetConsoleOutputCP(CP_UTF8);
 	int op;
 	cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
 	do {
