@@ -1,7 +1,9 @@
 #include <iostream>
 #include "funciones.h"
+#include <windows.h>
 using namespace std;
 int main() {
+	SetConsoleOutputCP(CP_UTF8);
 	int op;
 	do {
 		system("cls");
