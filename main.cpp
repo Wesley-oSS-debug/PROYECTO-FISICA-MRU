@@ -8,14 +8,10 @@ datos Dato[tam];
 int n=0;
 	
 int main() {
-	system("color 71");
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
-	int cant;
-	
-	cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
 	do {
-		if (n<=cant) {
+		if (n<=tam) {
 			system("cls");
 			cout<<"MENU PRINCIPAL"<<endl;
 			cout<<"1. Calcular Distancia."<<endl
@@ -23,7 +19,7 @@ int main() {
 				<<"3. Calcular Tiempo."<<endl
 				<<"4. Calcular la velocidad promedio"<<endl
 				<<"5. Calcular la repidez promedio "<<endl
-				<<"6. Mostrar datos"<<endl
+				<<"6. Mostrar datos (Distancia, Velocidad, Tiempo)"<<endl
 				<<"7. Velocidad instantanea"<<endl
 				<<"0. Salir del programa\n"<<endl;
 			cout<<"Ingrese una opcion: "; cin>>op;
