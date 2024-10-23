@@ -19,7 +19,7 @@ void Distancia() {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     Dato[n].distancia=Dato[n].velocidad*Dato[n].tiempo;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 16);
-    cout<<"\nLa distancia recorrida es: "<<Dato[n].distancia<<" m"<< endl;
+    cout<<"\033[33m"<<"\nLa distancia recorrida es: "<<Dato[n].distancia<<" m"<<"\033[0m"<< endl;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     n++;
     system("pause");
