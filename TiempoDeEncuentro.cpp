@@ -1,5 +1,6 @@
 #include <iostream>
 #include "funciones.h"
+#include <windows.h>
 using namespace std;
 
 void tiempoDeEncuentro() {
