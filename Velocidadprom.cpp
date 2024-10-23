@@ -6,6 +6,9 @@ using namespace std;
 void Velocidadprom() {
 	system("cls");
 	double x0, xf, t1, t2;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+	cout << "Calculo de la velocidad promedio\n\n";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     cout<<"Ingrese la posicion inicial(m): "; 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 	cin>>x0;
@@ -23,8 +26,10 @@ void Velocidadprom() {
 	cin>>t2;
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     cout<<endl;
-    cout<<"Velocidad promedio = (Xf-x0)/"<<"(tf-t0)"<<endl;
+    cout<<"Velocidad promedio = (Xf-x0)/"<<"(tf-t0)\n"<<endl;
     double velocidadprom=(xf-x0)/(t2-t1);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 16);
     cout<<"\nLa velocidad instantanea es: "<<velocidadprom<<" m/s"<< endl;
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     system("pause");
 }
