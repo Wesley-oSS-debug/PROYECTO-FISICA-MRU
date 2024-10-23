@@ -3,10 +3,14 @@
 #include <windows.h>
 #include "estructuras.h"
 using namespace std;
+	
+datos Dato[tam];
+int n=0;
+	
 int main() {
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
-	int aux;
+	int cant;
 	
 	cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
 	do {
