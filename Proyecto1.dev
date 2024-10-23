@@ -1,6 +1,6 @@
 [Project]
-filename=Proyecto1.dev
-name=Proyecto1
+FileName=Proyecto1.dev
+Name=Proyecto1
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;16;0;0;0
-UnitCount=10
+UnitCount=12
 
 [VersionInfo]
 Major=1
@@ -142,6 +142,26 @@ BuildCmd=
 
 [Unit10]
 FileName=Velocidadinst.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit11]
+FileName=TiempoDeAlcance.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit12]
+FileName=TiempoDeEncuentro.cpp
 CompileCpp=1
 Folder=
 Compile=1
