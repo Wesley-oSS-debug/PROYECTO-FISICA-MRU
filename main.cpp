@@ -10,10 +10,18 @@ int n=0;
 int main() {
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+	cout << "	          MRU                \n\n";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	do {
 		if (n<=tam) {
 			system("cls");
-			cout<<"MENU PRINCIPAL"<<endl;
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+			cout <<"=========MRU=========\n\n";
+			cout<<"   MENU PRINCIPAL"<<endl;
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			cout<<"1. Calcular Distancia."<<endl
 				<<"2. Calcular Velocidad."<<endl
 				<<"3. Calcular Tiempo."<<endl
@@ -22,7 +30,10 @@ int main() {
 				<<"6. Mostrar datos (Distancia, Velocidad, Tiempo)"<<endl
 				<<"7. Velocidad instantanea"<<endl
 				<<"0. Salir del programa\n"<<endl;
-			cout<<"Ingrese una opcion: "; cin>>op;
+			cout<<"Ingrese una opcion: "; 
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+			cin>>op;
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			cout<<endl;
 			switch (op) {
 				case 1:
