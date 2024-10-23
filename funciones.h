@@ -9,6 +9,8 @@ void MostrarDatos();
 void Rapidezprom();
 double derivarterm();
 void Velocidadinst();
+void tiempoDeAlcance();
+void tiempoDeEncuentro();
 
 #endif
 

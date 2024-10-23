@@ -29,6 +29,8 @@ int main() {
 				<<"5. Calcular la repidez promedio "<<endl
 				<<"6. Mostrar datos (Distancia, Velocidad, Tiempo)"<<endl
 				<<"7. Velocidad instantanea"<<endl
+				<<"8. Tiempo de encuentro"<<endl
+				<<"9. Tiempo de alcance"<<endl
 				<<"0. Salir del programa\n"<<endl;
 			cout<<"Ingrese una opcion: "; 
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
@@ -56,6 +58,12 @@ int main() {
 					break;	
 				case 7:
 					Velocidadinst();
+					break;
+				case 8:
+					tiempoDeEncuentro();
+					break;
+				case 9:
+					tiempoDeAlcance();
 					break;
 			}
 		} else {
