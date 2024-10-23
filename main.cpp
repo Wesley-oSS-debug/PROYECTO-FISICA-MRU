@@ -11,7 +11,9 @@ int main() {
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
 	int cant;
-	
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+	cout << "	          MRU                \n\n";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	cout<<"Ingrese la cantidad de datos a ingresar: "; 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 	cin>>cant; 
@@ -20,6 +22,7 @@ int main() {
 		if (n<=cant) {
 			system("cls");
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+			cout <<"=========MRU=========\n\n";
 			cout<<"   MENU PRINCIPAL"<<endl;
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			cout<<"1. Calcular Distancia."<<endl

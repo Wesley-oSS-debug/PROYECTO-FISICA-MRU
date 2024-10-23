@@ -17,6 +17,9 @@ double derivarTerm(double coeficiente, int exponente, double tiempo) {
 void Velocidadinst() {
 	system("cls");
     int n; 
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+	cout << "Calculo de la velocidad instantanea\n\n";
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     cout << "Ingrese el numero de terminos del x(t): ";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
     cin >> n;
@@ -40,7 +43,9 @@ void Velocidadinst() {
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
         velocidadInstantanea += derivarTerm(coeficiente, exponente, tiempo);
     }
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 16);
     cout << "\nLa velocidad instantanea en el tiempo dado es: "
          << velocidadInstantanea << " m/s" << endl;
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     system("pause");
 }
