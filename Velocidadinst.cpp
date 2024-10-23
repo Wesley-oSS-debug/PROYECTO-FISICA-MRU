@@ -17,7 +17,7 @@ double derivarTerm(double coeficiente, int exponente, double tiempo) {
 void Velocidadinst() {
 	system("cls");
     int n; 
-    cout << "Ingrese el webadas: ";
+    cout << "Ingrese el numero de terminos del x(t): ";
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
     cin >> n;
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
