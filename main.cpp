@@ -19,6 +19,7 @@ int main() {
 				<<"4. Calcular la velocidad promedio"<<endl
 				<<"5. Calcular la repidez promedio "<<endl
 				<<"6. Mostrar datos"<<endl
+				<<"7. Velocidad instantanea"<<endl
 				<<"0. Salir del programa\n"<<endl;
 			cout<<"Ingrese una opcion: "; cin>>op;
 			cout<<endl;
@@ -41,6 +42,9 @@ int main() {
 	      		case 6:
 	       			MostrarDatos();
 					break;	
+				case 7:
+					Velocidadinst();
+					break;
 			}
 		} else {
 			cout<<"Cantidad excedida"<<endl;
