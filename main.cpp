@@ -8,6 +8,7 @@ datos Dato[tam];
 int n=0;
 	
 int main() {
+	system("color 71");
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
 	int cant;
