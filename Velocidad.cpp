@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 #include "funciones.h"
 #include "estructuras.h"
 using namespace std;
@@ -8,8 +9,14 @@ void Velocidad() {
 	
 	double distancia,tiempo;
 	
-	cout<<"Ingrese la distancia (m): "; cin>>Dato[n].distancia;
-	cout<<"Ingrese el tiempo (s): "; cin>>Dato[n].tiempo;
+	cout<<"Ingrese la distancia (m): "; 
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+	cin>>Dato[n].distancia;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+	cout<<"Ingrese el tiempo (s): "; 
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+	cin>>Dato[n].tiempo;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
     Dato[n].velocidad=Dato[n].distancia/Dato[n].tiempo;
     cout<<"\nLa velocidad es: "<<Dato[n].velocidad<<" m/s"<< endl;
     n++;

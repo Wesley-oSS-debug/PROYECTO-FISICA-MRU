@@ -12,11 +12,16 @@ int main() {
 	int op;
 	int cant;
 	
-	cout<<"Ingrese la cantidad de datos a ingresar: "; cin>>cant; 
+	cout<<"Ingrese la cantidad de datos a ingresar: "; 
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+	cin>>cant; 
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	do {
 		if (n<=cant) {
 			system("cls");
-			cout<<"MENU PRINCIPAL"<<endl;
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+			cout<<"   MENU PRINCIPAL"<<endl;
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			cout<<"1. Calcular Distancia."<<endl
 				<<"2. Calcular Velocidad."<<endl
 				<<"3. Calcular Tiempo."<<endl
@@ -25,7 +30,10 @@ int main() {
 				<<"6. Mostrar datos"<<endl
 				<<"7. Velocidad instantanea"<<endl
 				<<"0. Salir del programa\n"<<endl;
-			cout<<"Ingrese una opcion: "; cin>>op;
+			cout<<"Ingrese una opcion: "; 
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+			cin>>op;
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			cout<<endl;
 			switch (op) {
 				case 1:
