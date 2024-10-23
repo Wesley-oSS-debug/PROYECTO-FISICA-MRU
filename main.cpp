@@ -10,16 +10,13 @@ int n=0;
 int main() {
 	SetConsoleOutputCP(CP_UTF8);
 	int op;
-	int cant;
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 	cout << "	          MRU                \n\n";
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
-	cout<<"Ingrese la cantidad de datos a ingresar: "; 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
-	cin>>cant; 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	do {
-		if (n<=cant) {
+		if (n<=tam) {
 			system("cls");
 			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 			cout <<"=========MRU=========\n\n";
@@ -30,7 +27,7 @@ int main() {
 				<<"3. Calcular Tiempo."<<endl
 				<<"4. Calcular la velocidad promedio"<<endl
 				<<"5. Calcular la repidez promedio "<<endl
-				<<"6. Mostrar datos"<<endl
+				<<"6. Mostrar datos (Distancia, Velocidad, Tiempo)"<<endl
 				<<"7. Velocidad instantanea"<<endl
 				<<"0. Salir del programa\n"<<endl;
 			cout<<"Ingrese una opcion: "; 

@@ -1,7 +1,7 @@
 #ifndef ESTRUCTURAS_H
 #define ESTRUCTURAS_H
 
-const int tam=1000;
+const int tam=100000;
 struct datos{
 	double velocidad;
 	double tiempo;
