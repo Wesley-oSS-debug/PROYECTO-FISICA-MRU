@@ -7,6 +7,8 @@ void Tiempo();
 void Velocidadprom();
 void MostrarDatos();
 void Rapidezprom();
+double derivarterm();
+void Velocidadinst();
 
 #endif
 
